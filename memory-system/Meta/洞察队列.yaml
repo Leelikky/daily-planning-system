@@ -1,0 +1,33 @@
+# 洞察队列
+
+type: Meta
+category: 洞察队列
+description: 待沉淀的用户洞察与待确认的记忆点
+
+## 待沉淀洞察
+
+# 从对话中发现的潜在模式、偏好、价值观
+
+pending_insights: []
+
+## 待确认记忆点
+
+# 需要用户确认的记忆内容
+
+pending_confirmations: []
+
+## 已验证洞察
+
+# 用户已确认的洞察，待沉淀到对应层级
+
+verified_insights: []
+
+## 处理队列
+
+# 按优先级排序的处理任务
+
+queue: []
+
+## 处理记录
+
+processed: []

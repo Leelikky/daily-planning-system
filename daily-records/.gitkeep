@@ -1,0 +1,5 @@
+# 此目录用于存放每日规划与复盘记录
+# Daily planning and review records
+
+*.md
+!.gitkeep

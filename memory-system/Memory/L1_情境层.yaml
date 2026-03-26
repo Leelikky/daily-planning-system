@@ -1,0 +1,43 @@
+# L1 情境层（Episodic Memory）
+
+layer: L1
+type: Episodic Memory
+description: 近期事件与情境记忆
+
+## 存储内容
+
+### 近期对话摘要
+
+# 按日期归档，保留 30 天
+
+entries: []
+
+### 当前项目状态
+
+active_projects: []
+
+### 近期决策记录
+
+recent_decisions: []
+
+### 待办事项与关注点
+
+todos: []
+focus_areas: []
+
+## 沉淀条件
+
+- 同一行为模式出现 3 次以上 → 沉淀为习惯
+- 发现重复操作偏好 → 沉淀为行为偏好
+- 周/月复盘时人工确认
+
+## 清理条件
+
+- 超过 30 天的情境记忆自动归档或删除
+
+## 沉淀到 L2 的候选
+
+# 记录待沉淀的行为模式
+
+pending_habits: []
+pending_preferences: []

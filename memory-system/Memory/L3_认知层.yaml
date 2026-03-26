@@ -1,0 +1,46 @@
+# L3 认知层（Semantic Memory）
+
+layer: L3
+type: Semantic Memory
+description: 思维模式与决策框架
+
+## 存储内容
+
+### 思维模式
+
+# 示例：系统性思考、先原理后应用
+
+thinking_patterns: []
+
+### 决策框架
+
+# 示例：重要紧急矩阵、成本收益分析
+
+decision_frameworks: []
+
+### 心智模型
+
+# 示例：第一性原理、增长思维
+
+mental_models: []
+
+### 知识结构
+
+# 示例：擅长领域、学习方式
+
+knowledge_structure:
+  domains: []
+  learning_style: null
+
+## 沉淀条件
+
+- 认知模式背后发现核心价值驱动 → 沉淀为价值观
+- 多个决策框架指向同一人生信念 → 沉淀为核心信念
+- 年度复盘时人工深度反思
+
+## 沉淀到 L4 的候选
+
+# 记录待沉淀的核心价值
+
+pending_values: []
+pending_beliefs: []

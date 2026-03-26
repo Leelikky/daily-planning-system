@@ -1,0 +1,44 @@
+# L2 行为层（Procedural Memory）
+
+layer: L2
+type: Procedural Memory
+description: 行为模式与操作习惯
+
+## 存储内容
+
+### 工作习惯
+
+# 示例：先看大纲再写内容
+
+work_habits: []
+
+### 沟通风格
+
+# 示例：偏好简洁直接的回答
+
+communication_style: []
+
+### 工具偏好
+
+# 示例：常用 Notion、偏好 YAML 格式
+
+tool_preferences: []
+
+### 时间模式
+
+# 示例：早上处理复杂任务
+
+time_patterns: []
+
+## 沉淀条件
+
+- 行为背后发现稳定思维模式 → 沉淀为认知模式
+- 多个习惯指向同一决策原则 → 沉淀为决策框架
+- 季度复盘时人工确认
+
+## 沉淀到 L3 的候选
+
+# 记录待沉淀的认知模式
+
+pending_thinking_patterns: []
+pending_decision_frameworks: []

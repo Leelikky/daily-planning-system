@@ -1,0 +1,38 @@
+# 偏好与要求
+
+type: Intent
+category: 偏好与要求
+description: 用户主动表达的偏好与要求
+
+## 交互偏好
+
+interaction_preferences:
+  response_style: null  # 简洁/详细/平衡
+  language: null        # 中文/英文/混合
+  tone: null            # 正式/随意/友好
+
+## 内容风格要求
+
+content_style:
+  format: null          # Markdown/YAML/纯文本
+  structure: null       # 大纲式/段落式
+  depth: null           # 浅层/深层/按需
+
+## 服务期望
+
+service_expectations:
+  proactivity: null     # 主动建议/被动响应
+  detail_level: null    # 高/中/低
+  follow_up: null       # 需要/不需要
+
+## 工具与平台偏好
+
+tool_preferences: []
+
+## 知识领域偏好
+
+domain_preferences: []
+
+## 更新日志
+
+update_log: []

@@ -1,0 +1,39 @@
+# 约束与边界
+
+type: Intent
+category: 约束与边界
+description: 用户设定的决策红线与行为边界
+
+## 决策红线
+
+# 不可逾越的原则性约束
+
+red_lines: []
+
+## 禁忌事项
+
+# 明确禁止的行为或话题
+
+prohibitions: []
+
+## 行为边界
+
+# AI 协作时的行为限制
+
+boundaries: []
+
+## 隐私与安全
+
+privacy_settings:
+  share_level: null     # 完全私密/部分共享/公开
+  sensitive_topics: []  # 敏感话题列表
+
+## 时间与资源约束
+
+constraints:
+  time_limits: null
+  resource_limits: null
+
+## 更新日志
+
+update_log: []

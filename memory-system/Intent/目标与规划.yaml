@@ -1,0 +1,35 @@
+# 目标与规划
+
+type: Intent
+category: 目标与规划
+description: 用户主动设定的目标与规划
+
+## 短期目标（1-3个月）
+
+short_term_goals: []
+
+## 中期目标（3-12个月）
+
+medium_term_goals: []
+
+## 长期目标（1年以上）
+
+long_term_goals: []
+
+## 当前项目规划
+
+projects: []
+
+## 待办事项
+
+todos: []
+
+## 里程碑
+
+milestones: []
+
+## 更新日志
+
+# 记录目标的添加、完成、调整
+
+update_log: []

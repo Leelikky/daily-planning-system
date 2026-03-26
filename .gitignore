@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Personal data (don't commit your actual records)
+daily-records/*.md
+
+# Keep the structure
+!daily-records/.gitkeep

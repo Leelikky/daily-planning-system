@@ -1,0 +1,43 @@
+# L4 核心层（Core Identity）
+
+layer: L4
+type: Core Identity
+description: 核心价值观与身份认同
+
+## ⚠️ 特殊规则
+
+- 仅允许人工修改，AI 无法自动更新
+- 每次修改需记录原因与时间（留存演变历史）
+- 作为其他层级的 "校准锚点"，确保记忆不偏离核心自我
+
+## 存储内容
+
+### 核心价值观
+
+# 示例：追求真实、重视深度
+
+core_values: []
+
+### 人生信念
+
+# 示例：持续学习、创造价值
+
+life_beliefs: []
+
+### 性格特征
+
+# 示例：内向、分析型
+
+personality_traits: []
+
+### 决策原则
+
+# 示例：长期主义、先人后事
+
+decision_principles: []
+
+## 演变历史
+
+# 记录每次修改的时间、原因和变更内容
+
+evolution_history: []
