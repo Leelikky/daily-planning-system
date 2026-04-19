@@ -9,30 +9,65 @@ description: 用户设定的决策红线与行为边界
 # 不可逾越的原则性约束
 
 red_lines: []
+  # - rule: ""
+  #   reason: ""
+  #   added_date: ""
 
 ## 禁忌事项
 
 # 明确禁止的行为或话题
 
 prohibitions: []
+  # - rule: "周末（周六、周日）不安排工作规划"
+  #   reason: ""
+  #   added_date: ""
 
 ## 行为边界
 
 # AI 协作时的行为限制
 
 boundaries: []
+  # - rule: ""
+  #   reason: ""
+  #   added_date: ""
 
 ## 隐私与安全
 
 privacy_settings:
-  share_level: null     # 完全私密/部分共享/公开
-  sensitive_topics: []  # 敏感话题列表
+  share_level: "完全私密"
+  sensitive_topics: []
 
 ## 时间与资源约束
 
 constraints:
   time_limits: null
   resource_limits: null
+
+## AI 行为复盘机制
+
+ai_review:
+  check_frequency: "每周日"
+  file_path: "[你的项目路径]/ai-review/AI错误记录.md"
+  action: "读取并反思本周问题，若发现重复错误则更新约束"
+
+## 规划必问问题
+
+# 每次做规划时，必须询问用户
+
+planning_questions:
+  - question: "这里面有你给自己设的锚点吗？"
+    purpose: "识别重要不紧急的事"
+  - question: "哪件事是你热爱/想长期积累的？"
+    purpose: "提升自己事情的权重"
+  - question: "这件事如果不做，一周后/一月后你会后悔吗？"
+    purpose: "判断长期价值"
+
+## 定期提醒
+
+weekly_reminder:
+  frequency: "每周复盘时"
+  reminder: "本周有没有推进一件'重要不紧急'的事？"
+  action: "如果没有，下周强制给自己设一个锚点"
 
 ## 更新日志
 

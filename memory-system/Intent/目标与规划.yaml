@@ -4,13 +4,26 @@ type: Intent
 category: 目标与规划
 description: 用户主动设定的目标与规划
 
+## 核心目标
+
+core_goal: ""
+
 ## 短期目标（1-3个月）
 
 short_term_goals: []
+  # - goal: ""
+  #   status: ""
+  #   priority: ""
+  #   notes: ""
+  #   added_date: ""
 
 ## 中期目标（3-12个月）
 
 medium_term_goals: []
+  # - goal: ""
+  #   status: ""
+  #   priority: ""
+  #   notes: ""
 
 ## 长期目标（1年以上）
 
@@ -19,6 +32,11 @@ long_term_goals: []
 ## 当前项目规划
 
 projects: []
+  # - name: ""
+  #   status: ""
+  #   priority: ""
+  #   start_date: ""
+  #   notes: ""
 
 ## 待办事项
 
@@ -27,9 +45,18 @@ todos: []
 ## 里程碑
 
 milestones: []
+  # - date: ""
+  #   event: ""
+
+## 自己设定的锚点
+
+# 重要不紧急的事，需要主动推进
+
+self_anchors: []
+  # - name: ""
+  #   frequency: ""
+  #   target: ""
 
 ## 更新日志
-
-# 记录目标的添加、完成、调整
 
 update_log: []

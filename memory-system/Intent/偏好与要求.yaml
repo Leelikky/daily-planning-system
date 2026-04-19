@@ -2,36 +2,30 @@
 
 type: Intent
 category: 偏好与要求
-description: 用户主动表达的偏好与要求
+description: Daily Plan 相关的偏好与要求
 
-## 交互偏好
+## 复盘/规划流程偏好
 
-interaction_preferences:
-  response_style: null  # 简洁/详细/平衡
-  language: null        # 中文/英文/混合
-  tone: null            # 正式/随意/友好
+review_preferences:
+  must_call_skill_first: true
+  skill_name: "daily-plan"
+  storage_path: "[你的项目路径]/daily-records/"
+  file_naming: "YYYY-MM-DD_类型.md"
+  monthly_archive: true
+  notes: "每次做复盘/规划时，必须先调用 daily-plan skill"
+
+## 规划偏好
+
+planning_preferences:
+  response_style: "简洁"
+  language: "中文"
+  notes: "规划输出要简洁，不需要过多解释"
 
 ## 内容风格要求
 
 content_style:
-  format: null          # Markdown/YAML/纯文本
-  structure: null       # 大纲式/段落式
-  depth: null           # 浅层/深层/按需
-
-## 服务期望
-
-service_expectations:
-  proactivity: null     # 主动建议/被动响应
-  detail_level: null    # 高/中/低
-  follow_up: null       # 需要/不需要
-
-## 工具与平台偏好
-
-tool_preferences: []
-
-## 知识领域偏好
-
-domain_preferences: []
+  format: "Markdown"
+  structure: "大纲式"
 
 ## 更新日志
 

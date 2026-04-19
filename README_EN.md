@@ -8,6 +8,40 @@
 
 ---
 
+## ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **🧠 Five-Layer Memory** | From conversations to core values, AI understands you better over time |
+| **⚡ Quick Mode** | Give content → Organize → Preview & Confirm → Save, daily recording in seconds |
+| **🎯 Brain Dump & Sorting** | Pour out all thoughts → Auto-sort based on your values → Generate today's plan |
+| **📅 Smart Date Detection** | No work planning on weekends, asks about weekend plans on Friday review |
+| **🔄 Closed-Loop Deposition** | Plan → Execute → Review → Deposit to memory system, forming your growth trajectory |
+
+---
+
+## 🆕 Latest Updates (v2.0)
+
+- **Dual Mode Design**: New Quick Mode for effortless daily recording
+- **Preview & Confirm Mechanism**: Preview before saving, confirm to store, avoid errors
+- **Smart Date Detection**: Auto-detect weekends, no more wrong work planning
+- **Self-Set Anchors**: Track "important but not urgent" tasks, force progress on your own systems
+- **Planning Must-Ask Questions**: Auto-ask about anchors, passions, and long-term value
+- **AI Behavior Review Mechanism**: Weekly auto-check of error logs, continuous optimization
+
+---
+
+## 🚀 Quick Usage
+
+```
+Start daily planning    →  Full mode: Brain dump + Smart sorting
+Do today's review       →  Quick mode: Direct recording
+Start daily review      →  Deep review process
+Brain dump              →  Enter brain dump session
+```
+
+---
+
 ## Why Do You Need This System?
 
 Do you struggle with these problems?
@@ -67,7 +101,7 @@ The memory system uses a "passive deposition" track, letting AI gradually unders
 ├─────────────────────────────────────────────────────────────┤
 │                      L1 Episodic Layer                       │
 │       Recent Events · Project Status · To-Do Items            │
-│                 Retained for 30 days, auto-cleanup            │
+│                 Retained for 14 days, auto-cleanup            │
 ├─────────────────────────────────────────────────────────────┤
 │                      L0 State Layer                          │
 │                Temporary state of current dialogue            │
@@ -90,58 +124,46 @@ Besides passive deposition, you can also actively tell AI:
 
 | File | Purpose |
 |------|---------|
-| `Goals_and_Planning.yaml` | Short/Medium/Long-term goals |
-| `Preferences_and_Requirements.yaml` | Interaction style, format preferences |
-| `Constraints_and_Boundaries.yaml` | Decision red lines, prohibitions |
+| `Goals_and_Planning.yaml` | Core goal, short/medium/long-term goals, self-anchors |
+| `Preferences_and_Requirements.yaml` | Review/planning preferences, interaction style |
+| `Constraints_and_Boundaries.yaml` | Decision red lines, planning must-ask questions |
 
 ---
 
-## Part 2: Daily Plan Skill — Complete Closed Loop
+## Part 2: Daily Plan Skill — Dual Mode Design
 
-### 🌅 Morning: Daily Planning
+### ⚡ Quick Mode (Daily Use)
 
-```
-Say: "Start daily planning"
-```
+**Trigger**: User directly provides review/planning content
 
-**What the Skill does:**
+**Flow**:
+1. Read memory system reference files
+2. Organize content
+3. **Preview → Wait for confirmation → Save**
+4. Update L1_Episodic_Layer
 
-1. **Load Memory** → Read your goals, preferences, values
-2. **Brain Dump** → Let you pour out all tasks without judgment
-3. **Value Sorting** → Calculate priority for each task based on your core layer
-4. **Task Splitting** → Distinguish "Protected Time Tasks" from "Agent Auto Tasks"
-5. **Generate List** → Output today's execution table, auto-save
+**Features**: Simple and efficient, suitable for daily quick recording
 
-**Priority Formula:**
-```
-Priority Score = Goal Alignment(40%) + Importance(30%) + Urgency(20%) + Energy Match(10%)
-```
+### 🎯 Full Mode (Deep Planning)
 
-**Time Block Matching:**
-- Morning → High-energy tasks (complex thinking, creative work)
-- Afternoon → Medium-energy (communication, collaboration, learning)
-- Evening → Low-energy (organizing, exploring)
+**Trigger**: Say "Start daily planning" or "Brain dump"
 
-### 🌙 Evening: Daily Review
+**Flow**:
+1. Load memory system
+2. Smart date detection (no work planning on weekends)
+3. Brain dump session (let user pour out all thoughts)
+4. Smart sorting (based on L4 core layer decision principles)
+5. Generate plan and save
+6. Update memory system
 
-```
-Say: "Start daily review"
-```
+**Priority Sorting Logic**:
 
-**What the Skill does:**
-
-1. **Read Plan** → Compare with this morning's plan
-2. **Guided Questions** → 5 questions to help you reflect on the day
-3. **Generate Report** → Completion status, key insights, pending depositions
-4. **Update Memory** → Write new insights to L1 Episodic Layer
-5. **Deposition Queue** → Discover behavioral patterns, add to queue
-
-**Review Question List:**
-1. What tasks did you actually complete today?
-2. What tasks weren't completed? Why?
-3. Any unexpected gains or discoveries today?
-4. How was your energy level today?
-5. What's important for tomorrow?
+| Dimension | Data Source |
+|-----------|-------------|
+| Goal Alignment | Intent/Goals_and_Planning.yaml |
+| Importance | L4 Core Values |
+| Urgency | User description |
+| Energy Requirement | L2 Time Patterns |
 
 ---
 
@@ -157,20 +179,26 @@ cp -r skill/daily-plan "C:/Users/[Username]/.claude/skills/"   # Windows
 
 ### 2. Modify Paths
 
-Edit `skill/daily-plan/SKILL.md`, replace all `[Your_Project_Path]` with your actual path.
+Edit `skill/daily-plan/SKILL.md`, replace all `[你的项目路径]` with your actual path.
+
+Also update paths in these files:
+- `memory-system/Intent/Preferences_and_Requirements.yaml` → `storage_path`
+- `memory-system/Intent/Constraints_and_Boundaries.yaml` → `ai_review.file_path`
 
 ### 3. Initialize Memory System
 
 Open these files and fill in your initial information:
 
 - `memory-system/Memory/L4_Core_Layer.yaml` → Your core values, decision principles
-- `memory-system/Intent/Goals_and_Planning.yaml` → Your short/medium/long-term goals
+- `memory-system/Intent/Goals_and_Planning.yaml` → Your core goal, short/medium/long-term goals
+- `memory-system/Memory/L2_Behavioral_Layer.yaml` → Your time patterns, decision habits
 
 ### 4. Start Using
 
 ```
 Start daily planning    →  Enter brain dump and priority sorting
-Start daily review      →  Summarize the day and deposit memories
+Do today's review       →  Quick mode recording
+Start daily review      →  Deep review process
 ```
 
 ---
@@ -198,8 +226,12 @@ daily-planning-system/
 │   └── Meta/                      # System metadata
 │       ├── Insights_Queue.yaml
 │       ├── Framework_Evolution.yaml
-│       └── Review_Records/Review_Template.yaml
+│       └── Review_Records/
+│           ├── Review_Template.yaml
+│           ├── Daily_Review_Template.yaml
+│           └── Weekly_Review_Template.yaml
 └── daily-records/                 # Daily planning and review storage
+    └── .gitkeep
 ```
 
 ---
@@ -211,7 +243,7 @@ daily-planning-system/
 | **Personal Time Management** | Morning planning + evening review, build self-discipline |
 | **AI-Assisted Decisions** | Memory system lets AI understand your values and preferences |
 | **Self-Awareness Exploration** | Discover your behavioral and thinking patterns through deposition |
-| **Team Collaboration** | Agent task splitting, one person works like a small team |
+| **Goal Alignment** | Every planning session aligns with long-term goals |
 
 ---
 

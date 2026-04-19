@@ -1,0 +1,58 @@
+# 每日复盘报告
+
+date: null
+session_count: 0
+
+## 一、今日事件摘要
+
+# 按时间顺序记录关键事件
+
+events: []
+
+## 二、决策记录
+
+# 今日做出的重要决策
+
+decisions: []
+
+## 三、发现的行为模式
+
+# 今日观察到的行为偏好
+
+behavior_patterns: []
+
+## 四、发现的偏好线索
+
+# 用户表达的喜好或厌恶
+
+preference_clues: []
+
+## 五、候选洞察
+
+# 待沉淀到更深层级的内容
+
+pending_insights:
+  - content: null
+    evidence: null          # 支持证据
+    suggested_layer: null   # 建议沉淀层级
+    confidence: null        # 置信度 (低/中/高)
+
+## 六、对话质量评估
+
+metrics:
+  total_turns: 0            # 总对话轮次
+  topics_covered: []        # 涉及主题
+  tasks_completed: []       # 完成的任务
+  satisfaction_indicators: [] # 满意度指标
+
+## 七、明日建议
+
+suggestions: []
+
+## 八、更新记录
+
+# 对记忆系统的更新
+
+memory_updates:
+  l1_added: []              # 添加到 L1 的内容
+  insights_queued: []       # 加入洞察队列的内容

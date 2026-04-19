@@ -1,0 +1,84 @@
+# 每周复盘报告
+
+week: null
+period: null
+
+## 一、本周概览
+
+summary:
+  total_sessions: 0
+  total_turns: 0
+  key_topics: []
+  major_tasks: []
+
+## 二、成就与进展
+
+achievements: []
+
+## 三、挑战与问题
+
+challenges: []
+
+## 四、行为分析
+
+### 确认的习惯（出现 3 次以上）
+
+confirmed_habits: []
+
+### 行为趋势
+
+trends: []
+
+### 待确认的模式
+
+pending_patterns: []
+
+## 五、偏好分析
+
+### 明确表达的偏好
+
+stated_preferences: []
+
+### 推断的偏好
+
+inferred_preferences: []
+
+## 六、目标进展
+
+### 短期目标进展
+
+short_term_progress: []
+
+### 目标调整建议
+
+goal_adjustments: []
+
+## 七、沉淀建议
+
+### 建议沉淀到 L2（行为层）
+
+l2_candidates: []
+
+### 建议沉淀到 L3（认知层）
+
+l3_candidates: []
+
+## 八、下周规划
+
+next_week:
+  priorities: []
+  focus_areas: []
+  suggested_tasks: []
+
+## 九、报告输出
+
+### 周报草稿
+
+weekly_report_draft: null
+
+### 数据统计
+
+statistics:
+  most_discussed_topics: []
+  peak_activity_days: []
+  average_session_length: null
