@@ -36,9 +36,9 @@ solution: ""
 # 做规划时用于判断优先级和任务分配
 
 decision_habits: []
-  # - habit: "行为描述"
-  #   description: "具体说明"
-  #   impact: "对决策的影响"
+  # - habit: "先做重要的事"
+  #   description: "每天先处理重要任务"
+  #   impact: "提高效率"
   #   discovered_date: "2026-01-01"
   #   evidence: ["证据1", "证据2"]
 
@@ -57,7 +57,7 @@ time_patterns: []
 # Daily Plan Skill 专用的行为偏好
 
 review_patterns: []
-  # - pattern: "做复盘时先看参考文件再整理"
+  # - pattern: "先回顾再整理"
   #   confidence: "高"
   #   discovered_date: "2026-01-01"
   #   notes: "习惯流程"

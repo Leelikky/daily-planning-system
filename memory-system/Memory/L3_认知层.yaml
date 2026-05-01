@@ -14,7 +14,7 @@ thinking_patterns: []
   # - pattern: "系统性思考"
   #   description: "先定义框架再执行，先理清逻辑再行动"
   #   underlying_principle: "减少返工，提高效率"
-  #   related_habits: ["沟通前思维闭环", "复盘前先回顾历史"]
+  #   related_habits: ["habit1", "habit2"]
   #   evidence:
   #     - date: "2026-01-01"
   #       context: "具体场景描述"
@@ -45,7 +45,7 @@ mental_models: []
 
 knowledge_structure:
   domains: []
-    # - name: "AI 产品管理"
+    # - name: "某领域"
     #   proficiency: "学习中"
     #   started_date: "2026-01-01"
   learning_style: null
@@ -62,9 +62,9 @@ knowledge_structure:
 # 记录待沉淀的核心价值
 
 pending_values: []
-  # - value: "责任边界意识"
-  #   description: "明确角色边界，定义规则交给对应角色"
-  #   related_patterns: ["分层思维", "结构化思维"]
+  # - value: "效率优先"
+  #   description: "追求高效率的做事方式"
+  #   related_patterns: ["系统性思考", "工具思维"]
   #   evidence: ["证据1", "证据2"]
   #   confidence: "高"
   #   status: "待确认"
