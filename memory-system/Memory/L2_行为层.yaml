@@ -2,13 +2,13 @@
 
 layer: L2
 type: Procedural Memory
-description: Daily Plan 相关的行为模式与决策依据
+description: 重复出现的做事方式 — "怎么做"
 
 ## 存储内容
 
 ### 价值权重偏好
 
-# 做优先级排序时的权重
+# 做优先级排序时的权重（可根据个人偏好调整）
 
 priority_weights:
   - category: "自己设定的锚点"
@@ -26,6 +26,8 @@ priority_weights:
 
 ### 核心问题
 
+# 规划时需要关注的核心问题
+
 core_issue: ""
 solution: ""
 
@@ -34,10 +36,11 @@ solution: ""
 # 做规划时用于判断优先级和任务分配
 
 decision_habits: []
-  # - habit: ""
-  #   rule: ""
-  #   impact: ""
-  #   discovered_date: ""
+  # - habit: "行为描述"
+  #   description: "具体说明"
+  #   impact: "对决策的影响"
+  #   discovered_date: "2026-01-01"
+  #   evidence: ["证据1", "证据2"]
 
 ### 时间模式
 
@@ -46,33 +49,60 @@ decision_habits: []
 time_patterns: []
   # - pattern: "早上处理复杂任务"
   #   confidence: "高"
-  #   discovered_date: ""
-  #   notes: ""
+  #   discovered_date: "2026-01-01"
+  #   notes: "早上精力充沛"
 
 ### 复盘/规划行为模式
 
 # Daily Plan Skill 专用的行为偏好
 
 review_patterns: []
-  # - pattern: ""
-  #   confidence: ""
-  #   discovered_date: ""
-  #   notes: ""
+  # - pattern: "做复盘时先看参考文件再整理"
+  #   confidence: "高"
+  #   discovered_date: "2026-01-01"
+  #   notes: "习惯流程"
 
 ### 规划偏好
 
 # 用于脑倒空和优先级排序
 
 planning_preferences: []
-  # - preference: ""
-  #   notes: ""
+  # - preference: "简洁的回答风格"
+  #   notes: "偏好简洁的回答"
 
 ## 沉淀条件
 
 - 同一行为模式在复盘/规划中出现 3 次以上 → 沉淀
-- 季度复盘时人工确认
+- 每周复盘时人工确认
 
 ## 沉淀到 L3 的候选
 
+# 记录待沉淀的思维模式
+
 pending_thinking_patterns: []
-pending_decision_frameworks: []
+  # - pattern: "系统性思考"
+  #   description: "先定义框架再执行"
+  #   related_habits: ["habit1", "habit2"]
+  #   evidence: ["证据1", "证据2"]
+  #   confidence: "高"
+
+---
+
+## 说明
+
+本文件存储用户的行为模式和决策习惯。
+
+### 与 L1 的关系
+- L1 记录"发生了什么"（具体事件）
+- L2 记录"怎么做"（行为模式）
+- 同一行为在 L1 出现 3 次以上后沉淀到 L2
+
+### 记录格式说明
+
+```yaml
+- habit: "行为名称"
+  description: "行为描述"
+  impact: "对决策/规划的影响"
+  discovered_date: "发现日期"
+  evidence: ["支撑证据1", "支撑证据2"]
+```

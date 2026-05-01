@@ -2,40 +2,59 @@
 
 layer: L3
 type: Semantic Memory
-description: 思维模式与决策框架
+description: 思考问题的方式、分析框架 — "怎么想"
 
 ## 存储内容
 
 ### 思维模式
 
-# 示例：系统性思考、先原理后应用
+# 从多个行为中提炼的共同思维方式
 
 thinking_patterns: []
+  # - pattern: "系统性思考"
+  #   description: "先定义框架再执行，先理清逻辑再行动"
+  #   underlying_principle: "减少返工，提高效率"
+  #   related_habits: ["沟通前思维闭环", "复盘前先回顾历史"]
+  #   evidence:
+  #     - date: "2026-01-01"
+  #       context: "具体场景描述"
+  #   discovered_date: "2026-01-01"
+  #   confidence: "高"
 
 ### 决策框架
 
-# 示例：重要紧急矩阵、成本收益分析
+# 做决策时使用的分析框架
 
 decision_frameworks: []
+  # - framework: "重要紧急矩阵 + 价值权重"
+  #   description: "用权重量化优先级判断"
+  #   weights:
+  #     - category: "自己设定的锚点"
+  #       weight: 0.35
+  #   discovered_date: "2026-01-01"
 
 ### 心智模型
 
-# 示例：第一性原理、增长思维
+# 理解世界的基本模型
 
 mental_models: []
 
 ### 知识结构
 
-# 示例：擅长领域、学习方式
+# 擅长领域和学习方式
 
 knowledge_structure:
   domains: []
+    # - name: "AI 产品管理"
+    #   proficiency: "学习中"
+    #   started_date: "2026-01-01"
   learning_style: null
+  notes: null
 
 ## 沉淀条件
 
+- 发现多个 L2 行为背后有共同的思维方式 → 沉淀为思维模式
 - 认知模式背后发现核心价值驱动 → 沉淀为价值观
-- 多个决策框架指向同一人生信念 → 沉淀为核心信念
 - 年度复盘时人工深度反思
 
 ## 沉淀到 L4 的候选
@@ -43,4 +62,35 @@ knowledge_structure:
 # 记录待沉淀的核心价值
 
 pending_values: []
+  # - value: "责任边界意识"
+  #   description: "明确角色边界，定义规则交给对应角色"
+  #   related_patterns: ["分层思维", "结构化思维"]
+  #   evidence: ["证据1", "证据2"]
+  #   confidence: "高"
+  #   status: "待确认"
+
 pending_beliefs: []
+
+---
+
+## 说明
+
+本文件存储用户的思维模式和决策框架。
+
+### 与 L2 的关系
+- L2 记录"怎么做"（具体行为）
+- L3 记录"怎么想"（思维模式）
+- 一个 L3 思维模式可能对应多个 L2 行为
+
+### 沉淀逻辑
+```
+观察多个 L2 行为
+    ↓
+发现共同思维方式
+    ↓
+提炼为 L3 思维模式
+    ↓
+分析背后的价值驱动
+    ↓
+建议更新 L4（需用户确认）
+```

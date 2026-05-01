@@ -6,21 +6,35 @@ description: 待沉淀的用户洞察与待确认的记忆点
 
 ## 待沉淀洞察
 
-# 从对话中发现的潜在模式、偏好、价值观
+# 从复盘/规划中发现的潜在模式、偏好、价值观
 
 pending_insights: []
+  # - date: "2026-01-01"
+  #   insight: "洞察内容"
+  #   type: "行为模式|偏好线索|价值观信号"
+  #   suggested_action: "建议行动"
+  #   suggested_layer: "L2|L3|L4"
+  #   status: "待处理|已处理"
 
 ## 待确认记忆点
 
-# 需要用户确认的记忆内容
+# 需要用户确认的记忆内容（尤其是 L4 更新）
 
 pending_confirmations: []
+  # - date: "2026-01-01"
+  #   content: "待确认内容"
+  #   target_layer: "L4"
+  #   reason: "原因说明"
+  #   status: "待确认|已确认|已拒绝"
 
 ## 已验证洞察
 
-# 用户已确认的洞察，待沉淀到对应层级
+# 用户已确认的洞察，已沉淀到对应层级
 
 verified_insights: []
+  # - date: "2026-01-01"
+  #   insight: "洞察内容"
+  #   action_taken: "已沉淀到L2/L3/L4"
 
 ## 处理队列
 
@@ -30,4 +44,8 @@ queue: []
 
 ## 处理记录
 
+# 已处理的洞察记录
+
 processed: []
+  # - date: "2026-01-01"
+  #   action: "处理内容"

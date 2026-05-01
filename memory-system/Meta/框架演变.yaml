@@ -4,23 +4,65 @@ type: Meta
 category: 框架演变
 description: 记忆系统的版本迭代与设计变更记录
 
+## 当前版本
+
+current_version: "2.0.0"
+release_date: 2026-04-28
+
 ## 版本历史
 
-version_history:
+versions:
+  - version: "2.0.0"
+    date: "2026-04-28"
+    changes:
+      - "重构层级定义：明确 L1(事件)、L2(行为)、L3(思维)、L4(价值) 的本质区别"
+      - "新增操作手册：完整的运作流程文档"
+      - "新增自主执行机制：每周日自动净化"
+      - "重新设计沉淀条件：出现 3 次以上沉淀到 L2，行为共性沉淀到 L3"
+    problems_solved:
+      - "L3 认知层长期为空的问题"
+      - "沉淀条件不可操作的问题"
+      - "无自主执行机制的问题"
+
   - version: "1.0.0"
-    date: "请填写日期"
+    date: "2026-03-25"
     changes:
       - "初始化记忆系统框架"
-    notes: "首次创建"
+      - "创建五层被动沉淀轨道"
+      - "创建主动输入轨道"
+      - "创建系统元数据结构"
 
-## 设计决策
+## 设计变更记录
 
-design_decisions: []
+design_changes: []
+  # - date: "2026-01-01"
+  #   change: "变更内容"
+  #   before: "变更前状态"
+  #   after: "变更后状态"
+  #   reason: "变更原因"
 
-## 待优化项
+## 待改进项
 
-pending_improvements: []
+improvements: []
+  # - issue: "问题描述"
+  #   proposed_solution: "建议解决方案"
+  #   priority: "高|中|低"
+  #   status: "待实现|已实现"
 
-## 已完成的优化
+## 功能路线图
 
-completed_improvements: []
+roadmap: []
+  # - feature: "功能名称"
+  #   description: "功能描述"
+  #   status: "待设计|开发中|已完成"
+  #   priority: "高|中|低"
+
+## 系统自检记录
+
+# 每周净化时记录反思
+
+self_checks: []
+  # - date: "2026-01-01"
+  #   findings: ["发现1", "发现2"]
+  #   actions_taken: ["行动1", "行动2"]
+  #   next_check: "下次检查日期"
